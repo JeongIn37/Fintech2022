@@ -1,12 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ListComponent from "./components/ListComponent";
-import HeaderWhite from "./components/HeaderWhite";
+import Welcome from "./components/Welcome";
+import AxiosTest from "./pages/AxiosTest";
 
 function App() {
   return (
-    <div>
-      <HeaderWhite title="환경설정" />
-      <ListComponent></ListComponent>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/test" element={<ListComponent />}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/" element={<Welcome />}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/axiosTest" element={<AxiosTest />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
