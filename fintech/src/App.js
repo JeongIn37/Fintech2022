@@ -1,16 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ListComponent from "./components/ListComponent";
 import Welcome from "./components/Welcome";
-<<<<<<< HEAD
-import AxiosTest from "./pages/AxiosTest";
-=======
 import AuthPage from "./pages/AuthPage";
 import AuthResult from "./pages/AuthResult";
 import AxiosTest from "./pages/AxiosTest";
 import BalancePage from "./pages/BalancePage";
 import MainPage from "./pages/MainPage";
 import NewsApiPage from "./pages/NewsApiPage";
->>>>>>> 177c1848c52b1a56124aa85556d947b45d292e5c
 
 function App() {
   return (
@@ -19,12 +15,6 @@ function App() {
         <Route path="/test" element={<ListComponent />}></Route>
       </Routes>
       <Routes>
-<<<<<<< HEAD
-        <Route path="/" element={<Welcome />}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/axiosTest" element={<AxiosTest />}></Route>
-=======
         <Route path="/axiosTest" element={<AxiosTest />}></Route>
       </Routes>
       <Routes>
@@ -41,7 +31,6 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/balance" element={<BalancePage />}></Route>
->>>>>>> 177c1848c52b1a56124aa85556d947b45d292e5c
       </Routes>
     </BrowserRouter>
   );
